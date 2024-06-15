@@ -1,0 +1,1 @@
+Command I used for this exercise ```docker compose up --scale compute=3```

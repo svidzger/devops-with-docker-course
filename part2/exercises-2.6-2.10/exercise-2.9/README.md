@@ -1,0 +1,1 @@
+I changed the REACT_APP_BACKEND_URL in the frontend Dockerfile from ```http://localhost:8080``` to ```http://localhost/api``` because Nginx is now set up as a reverse proxy to route requests.

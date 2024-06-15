@@ -1,0 +1,15 @@
+services:
+
+  frontend:
+    image: hello-frontend
+    container_name: frontend
+    ports:
+      - 5001:5001
+    restart: unless-stopped
+
+  backend:
+    image: hello-backend
+    container_name: backend
+    ports:
+      - 8080:8080
+    restart: unless-stopped

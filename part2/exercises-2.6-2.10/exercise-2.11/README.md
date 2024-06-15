@@ -1,0 +1,5 @@
+I have created a simple containerized development environment for a Django project with PostgreSQL using Docker. The setup involves creating a new Django project and setting up a virtual environment. The environment for the Django application is defined in a Dockerfile, specifying the base image, copying the application code, installing dependencies, and setting the entry command.
+
+Basic project dependencies like Django and psycopg2 are listed in a requirements.txt file. To manage both containers, a docker-compose.yml file is created, which also defines environment variables for database configuration that are included in settings.py.
+
+Using ```docker compose up --build```, I can build and run the containers. After that, I ran ```docker-compose exec web python manage.py migrate``` to execute database migrations to set up the database schema for the Django project. This setup ensures a consistent and isolated development environment that is easy to set up and run for any user using command ```docker compose up```.
